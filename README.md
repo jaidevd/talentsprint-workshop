@@ -1,5 +1,3 @@
-Dear Asokan,
-
 Here's a brief plan of the four sessions of the workshop. Each of these
 sections will include exercises based on real-world datasets. While most of the
 workshop depends only on scikit-learn, there are a few other requirements too.
