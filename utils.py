@@ -21,6 +21,15 @@ import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 
 
+def make_regression_exercise():
+    m = -2
+    c = 3
+    X = np.linspace(0, 1, 100)
+    y = m * X + c
+    y += np.random.rand(100,) * 0.1
+    return X, y
+
+
 def backprop_make_classification():
     X, Y = make_circles(factor=0.1, noise=0.1)
     Y = OneHotEncoder().fit_transform(Y.reshape(-1, 1)).toarray()
