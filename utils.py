@@ -15,10 +15,14 @@
 """
 
 import numpy as np
-from sklearn.datasets import make_moons, make_circles
+from sklearn.datasets import make_moons, make_circles, make_low_rank_matrix
 from sklearn.preprocessing import OneHotEncoder
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
+
+
+def make_varratio_exercise():
+    return make_low_rank_matrix(tail_strength=0.1)
 
 
 def make_regression_exercise():
