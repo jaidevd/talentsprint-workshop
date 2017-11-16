@@ -81,6 +81,18 @@ def draw_decision_boundary(clf, X, y, show=False):
         plt.show()
 
 
+def perceptron_decision_boundary(weights, X, y, show=False):
+    """Show the scatterplot of the data colored by the classes,
+    draw the decision line based on the weights."""
+    xx = np.linspace(X[:, 0].min(), X[:, 0].max())
+    yy = - (weights[0] * xx + weights[2]) / weights[1]
+    plt.figure(figsize=(6, 4))
+    plt.scatter(X[:, 0], X[:, 1], c=y)
+    plt.plot(xx, yy)
+    if show:
+        plt.show()
+
+
 def backprop_decision_boundary(predictor, X, y, show=False):
     y = np.argmax(y, axis=1)
     x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
