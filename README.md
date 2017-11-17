@@ -12,6 +12,7 @@ Requirements:
 - scikit-learn
 - tensorflow
 - keras
+- theano
 
 At most a couple more cursory packages might get added to this list as I
 proceed with creating the material, but those should be easily installable at
